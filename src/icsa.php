@@ -1,4 +1,17 @@
+<!-- 
+  Creat by Veronica Rivera De Choudens
+  Date: 12-07-2020
+ -->
+
+<?php
+include('../include/mysqli_connect.php');
+
+$query = "SELECT * FROM associations";
+
+$result = mysqli_query($conn, $query) or die("databese error:" . mysqli_error($conn));
+?>
 <!DOCTYPE html>
+<html>
 
 <head>
     <meta charset="UTF-8">
